@@ -1,6 +1,6 @@
 {
-  "name": "atherdon-react-markdown-component-wrapper",
-  "version": "0.0.3",
+  "name": "react-email-template",
+  "version": "0.0.1",
   "description": "Example React Component for npm Publication using Rollup",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atherdon/example-rollup-react-component-npm-package"
+    "url": "https://github.com/LLazyEmail/react-email-template"
   },
   "publishConfig": {
     "access": "public"
@@ -40,12 +40,11 @@
     "example react component",
     "example rollup react component"
   ],
-  "author": "jae.b.bradley@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jaebradley/example-rollup-react-component-npm-package/issues"
+    "url": "https://github.com/LLazyEmail/react-email-template/issues"
   },
-  "homepage": "https://github.com/jaebradley/example-rollup-react-component-npm-package#readme",
+  "homepage": "https://github.com/LLazyEmail/react-email-template#readme",
   "devDependencies": {
     "@babel/cli": "7.15.7",
     "@babel/core": "7.15.5",
