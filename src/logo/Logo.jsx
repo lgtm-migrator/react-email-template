@@ -12,7 +12,7 @@ import { Logo } from 'react-emails-components-miscellaneous';
 import { styles } from './styles';
 import config from './config';
 
-const Logo = () => (
+const LogoLayout = () => (
   <Table
     className="mcnImageBlock"
     style={styles.imageBlock}
@@ -48,4 +48,4 @@ const Logo = () => (
   </Table>
 );
 
-export default Logo;
+export default LogoLayout;

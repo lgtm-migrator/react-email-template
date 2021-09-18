@@ -1,6 +1,6 @@
 {
-  "name": "react-email-template",
-  "version": "0.0.1",
+  "name": "react-email-components-template",
+  "version": "0.0.3",
   "description": "Example React Component for npm Publication using Rollup",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -78,6 +78,7 @@
     "babel-preset-minify": "0.6.0-alpha.9",
     "bufferutil": "4.0.3",
     "canvas": "2.8.0",
+    "classnames": "2.3.1",
     "codecov": "3.8.3",
     "css-loader": "6.2.0",
     "enzyme": "3.11.0",
@@ -110,8 +111,7 @@
     "webpack": "5.53.0",
     "webpack-build-notifier": "2.3.0",
     "webpack-cli": "4.8.0",
-    "webpack-dev-server": "4.2.1",
-    "classnames": "2.3.1"
+    "webpack-dev-server": "4.2.1"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -121,7 +121,9 @@
   "dependencies": {
     "@babel/runtime": "^7.14.6",
     "atherdon-react-markdown-component-body": "^0.1.0",
-    "atherdon-react-markdown-component-typography": "^0.0.3"
+    "atherdon-react-markdown-component-typography": "^0.0.3",
+    "react-email-components-typography": "^0.0.4",
+    "react-emails-components-miscellaneous": "^0.2.0"
   },
   "storybook-deployer": {
     "gitUsername": "xxx",
