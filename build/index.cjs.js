@@ -2564,7 +2564,7 @@ var build$1 = {exports: {}};
 })));
 }(build$1, build$1.exports));
 
-var BodyPrototype = function BodyPrototype() {
+var Body = function Body() {
   return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(build$2.exports.Sponsor, {
     leftHref: "https://bit.ly/30AWyC4",
     rightHref: "https://bit.ly/30AWyC4",
@@ -3056,8 +3056,8 @@ var Sponsor = function Sponsor(_ref) {
   }, children)))))))))));
 };
 
-exports.BodyPrototype = BodyPrototype;
+exports.Body = Body;
 exports.HOC = HOC;
-exports.Logo = LogoLayout;
+exports.LogoLayout = LogoLayout;
 exports.PreviewText = PreviewText;
 exports.Sponsor = Sponsor;
