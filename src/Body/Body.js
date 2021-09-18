@@ -8,7 +8,7 @@ import {
   MainTitle, Image, Heading, Strong, Paragraph, Separator, Divider 
 } from "react-email-components-typography"
 
-const BodyPrototype = () => (
+const Body = () => (
   <>
     <Sponsor
       leftHref="https://bit.ly/30AWyC4"
@@ -89,4 +89,4 @@ const BodyPrototype = () => (
   </>
 );
 
-export default BodyPrototype;
+export default Body;

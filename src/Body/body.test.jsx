@@ -3,7 +3,7 @@ import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { create } from 'react-test-renderer';
 import ReactDOM from 'react-dom';
-import BodyPrototype from './BodyPrototype';
+import BodyPrototype from './Body';
 
 configure({ adapter: new Adapter() });
 

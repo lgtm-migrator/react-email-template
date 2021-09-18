@@ -28,6 +28,7 @@ const LogoLayout = () => (
             <tbody>
               <tr>
                 <td className="mcnImageContent" valign="top" style={styles.imageContent}>
+
                   <a href={config.link} title='' className='' target="_blank" style={styles.title}>
                     <img
                       align="center"
@@ -38,6 +39,8 @@ const LogoLayout = () => (
                       className="mcnImage"
                     />
                   </a>
+
+                  
                 </td>
               </tr>
             </tbody>
