@@ -2556,7 +2556,7 @@ var build$1 = {exports: {}};
 })));
 }(build$1, build$1.exports));
 
-var BodyPrototype = function BodyPrototype() {
+var Body = function Body() {
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(build$2.exports.Sponsor, {
     leftHref: "https://bit.ly/30AWyC4",
     rightHref: "https://bit.ly/30AWyC4",
@@ -3048,4 +3048,4 @@ var Sponsor = function Sponsor(_ref) {
   }, children)))))))))));
 };
 
-export { BodyPrototype, HOC, LogoLayout as Logo, PreviewText, Sponsor };
+export { Body, HOC, LogoLayout, PreviewText, Sponsor };

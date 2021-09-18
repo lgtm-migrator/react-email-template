@@ -2,14 +2,14 @@
 
 
 
-import BodyPrototype from './bodyPrototype/BodyPrototype.js';
+import Body from './Body/Body.js';
 
 import fonts from './fonts/Fonts';
 import HOC from './HOC/HOC.jsx';
 
-import Logo from './logo/Logo.jsx';
-import PreviewText from './previewText/PreviewText.jsx';
-import Sponsor from './sponsor/Sponsor.jsx';
+import LogoLayout from './LogoLayout/Logo.jsx';
+import PreviewText from './PreviewText/PreviewText.jsx';
+import Sponsor from './Sponsor/Sponsor.jsx';
 
 // import styles from './Styles/index.js';
 // TODO: find a better way to keep it at some place
@@ -18,8 +18,8 @@ import Sponsor from './sponsor/Sponsor.jsx';
 
 
 export {
-    Logo, PreviewText, Sponsor,
+    LogoLayout, PreviewText, Sponsor,
 
     HOC,
-    BodyPrototype
+    Body
 };
