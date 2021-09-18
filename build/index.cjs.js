@@ -3,9 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
-var reactEmailComponentsTypography = require('react-email-components-typography');
 var reactEmailComponentsTable = require('react-email-components-table');
-require('react-emails-components-miscellaneous');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -13,7 +11,7 @@ var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
-var build = {exports: {}};
+var build$2 = {exports: {}};
 
 (function (module, exports) {
 (function (global, factory) {
@@ -2276,24 +2274,312 @@ var build = {exports: {}};
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-}(build, build.exports));
+}(build$2, build$2.exports));
+
+var build$1 = {exports: {}};
+
+(function (module, exports) {
+(function (global, factory) {
+  factory(exports, React__default['default']) ;
+}(commonjsGlobal, (function (exports, React) {
+  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+  var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+
+  var styles$7 = {
+    dividerBlock: {
+      minWidth: '100%',
+      borderCollapse: 'collapse',
+      msoTableLspace: '0pt',
+      msoTableRspace: '0pt',
+      msTextSizeAdjust: '100%',
+      WebkitTextSizeAdjust: '100%',
+      tableLayout: 'fixed !important'
+    },
+    dividerBlockInner: {
+      minWidth: '100%',
+      padding: '12px 18px',
+      msoLineHeightRule: 'exactly',
+      msTextSizeAdjust: '100%',
+      WebkitTextSizeAdjust: '100%'
+    },
+    dividerContent: {
+      minWidth: '100%',
+      borderTop: '2px none #EAEAEA',
+      borderCollapse: 'collapse',
+      msoTableLspace: '0pt',
+      msoTableRspace: '0pt',
+      msTextSizeAdjust: '100%',
+      WebkitTextSizeAdjust: '100%'
+    },
+    td: {
+      msoLineHeightRule: 'exactly',
+      msTextSizeAdjust: '100%',
+      WebkitTextSizeAdjust: '100%'
+    }
+  };
+
+  /**
+   * Todo: I think this component repeat
+   */
+
+  var Divider = function Divider() {
+    return /*#__PURE__*/React__default['default'].createElement("table", {
+      border: 0,
+      cellPadding: 0,
+      cellSpacing: 0,
+      className: "mcnDividerBlock",
+      style: styles$7.dividerBlock
+    }, /*#__PURE__*/React__default['default'].createElement("tbody", {
+      className: "mcnDividerBlockOuter"
+    }, /*#__PURE__*/React__default['default'].createElement("tr", null, /*#__PURE__*/React__default['default'].createElement("td", {
+      className: "mcnDividerBlockInner",
+      style: styles$7.dividerBlockInner
+    }, /*#__PURE__*/React__default['default'].createElement("table", {
+      className: "mcnDividerContent",
+      border: 0,
+      cellPadding: 0,
+      cellSpacing: 0,
+      style: styles$7.dividerContent
+    }, /*#__PURE__*/React__default['default'].createElement("tbody", null, /*#__PURE__*/React__default['default'].createElement("tr", null, /*#__PURE__*/React__default['default'].createElement("td", {
+      style: styles$7.td
+    }, /*#__PURE__*/React__default['default'].createElement("span", null)))))))));
+  };
+
+  var styles$6 = {
+    title: {
+      textAlign: 'center',
+      display: 'block',
+      margin: 0,
+      padding: 0,
+      color: '#111111',
+      fontFamily: '"Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontSize: '18px',
+      fontStyle: 'normal',
+      fontWeight: 'bold',
+      lineHeight: '125%',
+      letterSpacing: 'normal'
+    },
+    spanFont: {
+      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif'
+    },
+    spanSize: {
+      fontSize: '18px'
+    }
+  };
+
+  var Heading = function Heading(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("h3", {
+      className: "mc-toc-title",
+      dir: "ltr",
+      style: styles$6.title
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$6.spanFont
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$6.spanSize,
+      "data-testid": "headingChildrenTest"
+    }, children)));
+  };
+
+  var Italic = function Italic(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("i", null, children);
+  };
+
+  var styles$5 = {
+    link: {
+      msoLineHeightRule: 'exactly',
+      msTextSizeAdjust: '100%',
+      WebkitTextSizeAdjust: '100%',
+      color: '#111111',
+      fontWeight: 'bold',
+      textDecoration: 'underline'
+    }
+  };
+
+  var Link = function Link(_ref) {
+    var href = _ref.href,
+        children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("a", {
+      href: href,
+      target: "_blank",
+      style: styles$5.link,
+      "data-testid": "linkPropsTest"
+    }, children);
+  };
+
+  var List = function List(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("ul", {
+      dir: "ltr",
+      "data-testid": "listProsChildrenTest"
+    }, children);
+  };
+
+  var styles$4 = {
+    title: {
+      textAlign: 'center',
+      display: 'block',
+      margin: 0,
+      padding: 0,
+      color: '#111111',
+      fontFamily: '"Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontSize: '26px',
+      fontStyle: 'normal',
+      fontWeight: 'bold',
+      lineHeight: '125%',
+      letterSpacing: 'normal'
+    },
+    spanFont: {
+      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif'
+    },
+    spanSize: {
+      fontSize: '30px'
+    }
+  };
+
+  var MainTitle = function MainTitle(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("h1", {
+      className: "mc-toc-title",
+      dir: "ltr",
+      style: styles$4.title
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$4.spanFont
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$4.spanSize,
+      "data-testid": "mainTitleChildrenTest"
+    }, children)));
+  };
+
+  var styles$3 = {
+    ltr: {
+      textAlign: 'justify'
+    },
+    spanSize: {
+      fontSize: '16px'
+    },
+    spanFont: {
+      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif'
+    }
+  };
+
+  var Paragraph = function Paragraph(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("div", {
+      dir: "ltr",
+      style: styles$3.ltr
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$3.spanFont
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$3.spanSize,
+      "data-testid": "paragraphChildrenTest"
+    }, children)));
+  };
+
+  var styles$2 = {
+    div: {
+      textAlign: 'center'
+    },
+    span1: {
+      fontSize: '16px'
+    },
+    span2: {
+      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif'
+    }
+  };
+
+  var Separator = function Separator() {
+    return /*#__PURE__*/React__default['default'].createElement("div", {
+      dir: "ltr",
+      style: styles$2.div
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$2.span1
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles$2.span2
+    }, /*#__PURE__*/React__default['default'].createElement("em", null, "***"))));
+  };
+
+  var styles$1 = {
+    strong: {
+      fontWeight: 'bolder'
+    }
+  };
+
+  var Strong = function Strong(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("strong", {
+      style: styles$1.strong,
+      "data-testid": "strongChildrenTest"
+    }, children);
+  };
+
+  var styles = {
+    ltr: {
+      textAlign: 'left',
+      lineHeight: '150%',
+      margin: '10px 0',
+      padding: 0,
+      msoLineHeightRule: 'exactly',
+      msTextSizeAdjust: '100%',
+      WebkitTextSizeAdjust: '100%',
+      color: '#111111',
+      fontFamily: '"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontSize: '18px'
+    },
+    spanSize: {
+      fontSize: '17px'
+    },
+    spanFont: {
+      fontFamily: 'trebuchet ms,lucida grande,lucida sans unicode,lucida sans,tahoma,sans-serif'
+    }
+  };
+
+  var SubTitle = function SubTitle(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement("p", {
+      dir: "ltr",
+      style: styles.ltr
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles.spanFont
+    }, /*#__PURE__*/React__default['default'].createElement("span", {
+      style: styles.spanSize
+    }, /*#__PURE__*/React__default['default'].createElement(Strong, null, children))));
+  };
+
+  exports.Divider = Divider;
+  exports.Heading = Heading;
+  exports.Italic = Italic;
+  exports.Link = Link;
+  exports.List = List;
+  exports.MainTitle = MainTitle;
+  exports.Paragraph = Paragraph;
+  exports.Separator = Separator;
+  exports.Strong = Strong;
+  exports.Subtitle = SubTitle;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+}(build$1, build$1.exports));
 
 var BodyPrototype = function BodyPrototype() {
-  return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(build.exports.Sponsor, {
+  return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(build$2.exports.Sponsor, {
     leftHref: "https://bit.ly/30AWyC4",
     rightHref: "https://bit.ly/30AWyC4",
     leftSrc: "https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png"
-  }, "Ship the data importer you always dreamed of"), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.MainTitle, null, "Can We Make Data Tidy?"), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Paragraph, null, "Imagine: You are going to sit down with a newly-fetched data set, excited about the insights it will bring you and then you find out it is no use. If you\u2019ve been there, then you know for sure what an untidy dataset is."), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Image, {
+  }, "Ship the data importer you always dreamed of"), /*#__PURE__*/React__default['default'].createElement(build$1.exports.MainTitle, null, "Can We Make Data Tidy?"), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Paragraph, null, "Imagine: You are going to sit down with a newly-fetched data set, excited about the insights it will bring you and then you find out it is no use. If you\u2019ve been there, then you know for sure what an untidy dataset is."), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Image, {
     href: "#",
     src: "https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/6.jpg",
     alt: "GIF"
-  }), ' ', "I", /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Divider, null), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Paragraph, null, "A statistician from New Zealand once said: Tidy datasets are all alike, but every messy dataset is messy in its own way. Indeed, as data may come in various forms and shapes, sometimes we are inundated with it. As a result, our data science team becomes shortsighted and oops.. disillusioned by mountains of unworkable data. The only way data specialists can facilitate analysis is by keeping data clean and organized."), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Heading, null, /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Strong, null, "What is tidy data?")), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Paragraph, null, "Essentially, tidy data is a term coined by Hadley Wickham in his Tidy Data paper (remember that statistician from NZ?). He defined tidy data as data that is neatly organized and all set for analysis. This way of organizing allows you to easily produce charts, diagrams, and summary statistics. As it often happens, not all data comes out of the database clean, therefore cleansing it is essential to efficiently analyze it."), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Image, {
+  }), ' ', "I", /*#__PURE__*/React__default['default'].createElement(build$1.exports.Divider, null), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Paragraph, null, "A statistician from New Zealand once said: Tidy datasets are all alike, but every messy dataset is messy in its own way. Indeed, as data may come in various forms and shapes, sometimes we are inundated with it. As a result, our data science team becomes shortsighted and oops.. disillusioned by mountains of unworkable data. The only way data specialists can facilitate analysis is by keeping data clean and organized."), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Heading, null, /*#__PURE__*/React__default['default'].createElement(build$1.exports.Strong, null, "What is tidy data?")), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Paragraph, null, "Essentially, tidy data is a term coined by Hadley Wickham in his Tidy Data paper (remember that statistician from NZ?). He defined tidy data as data that is neatly organized and all set for analysis. This way of organizing allows you to easily produce charts, diagrams, and summary statistics. As it often happens, not all data comes out of the database clean, therefore cleansing it is essential to efficiently analyze it."), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Image, {
     href: "#",
     src: "https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/memes/1.png"
-  }), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Divider, null), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Paragraph, null, "Without further ado, let us break down the principles that allow you keep your data nice and clean."), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Heading, null, /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Strong, null, "Tidy Data Principles")), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Heading, null, /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Strong, null, "1. Each row is an observational unit.")), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Image, {
+  }), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Divider, null), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Paragraph, null, "Without further ado, let us break down the principles that allow you keep your data nice and clean."), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Heading, null, /*#__PURE__*/React__default['default'].createElement(build$1.exports.Strong, null, "Tidy Data Principles")), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Heading, null, /*#__PURE__*/React__default['default'].createElement(build$1.exports.Strong, null, "1. Each row is an observational unit.")), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Image, {
     href: "#",
     src: "https://raw.githubusercontent.com/atherdon/newsletters/master/archive/img/image1.png"
-  }), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Divider, null), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Paragraph, null, "We\u2019ll start with one of the basic principles. When you are giving your data the once-over, you should make sure each row contains an observation. By definition, observation is the individual unit under question. If we look at the table above, an observational unit could be called \u2018people\u2019. You can see that each person has an individual row on the table and all of the information for that person is in the same row. Observations are included in rows, variables are represented as columns and there is only one observational unit per table. Now THIS is tidy data."), /*#__PURE__*/React__default['default'].createElement(reactEmailComponentsTypography.Divider, null), /*#__PURE__*/React__default['default'].createElement(build.exports.Sponsor, {
+  }), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Divider, null), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Paragraph, null, "We\u2019ll start with one of the basic principles. When you are giving your data the once-over, you should make sure each row contains an observation. By definition, observation is the individual unit under question. If we look at the table above, an observational unit could be called \u2018people\u2019. You can see that each person has an individual row on the table and all of the information for that person is in the same row. Observations are included in rows, variables are represented as columns and there is only one observational unit per table. Now THIS is tidy data."), /*#__PURE__*/React__default['default'].createElement(build$1.exports.Divider, null), /*#__PURE__*/React__default['default'].createElement(build$2.exports.Sponsor, {
     leftHref: "https://bit.ly/30AWyC4",
     rightHref: "https://bit.ly/30AWyC4",
     leftSrc: "https://raw.githubusercontent.com/atherdon/newsletters/master/archive/logos/thematic/2020/September/flatfile-logo-black-small-vertical.png"
@@ -2320,6 +2606,202 @@ var HOC = function HOC(_ref) {
     style: styles.templateContainer
   }, children)))))));
 };
+
+var build = {exports: {}};
+
+(function (module, exports) {
+(function (global, factory) {
+  factory(exports, React__default['default']) ;
+}(commonjsGlobal, (function (exports, React) {
+  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+  var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+
+  var Address = function Address(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, children);
+  };
+
+  var headStyles = function headStyles() {
+    return "\np{\n  margin:10px 0;\n  padding:0;\n}\n";
+  };
+
+  var Link = function Link(_ref) {
+    var href = _ref.href,
+        style = _ref.style,
+        children = _ref.children,
+        _ref$target = _ref.target,
+        target = _ref$target === void 0 ? "_blank" : _ref$target;
+    return /*#__PURE__*/React__default['default'].createElement("a", {
+      href: href,
+      style: style,
+      target: target,
+      "data-testid": "newsletterHrefTest"
+    }, children);
+  };
+
+  var Unsubscribe = function Unsubscribe(_ref) {
+    var hrefUnsub = _ref.hrefUnsub,
+        label = _ref.label,
+        styles = _ref.styles;
+    return /*#__PURE__*/React__default['default'].createElement(Link, {
+      href: hrefUnsub,
+      style: styles,
+      "data-testid": "unsubscribeTest"
+    }, label);
+  };
+
+  // const myComponent = () => <Img src="https://www.example.com/foo.jpg" />
+  // TODO replace our component with react-image component
+  // let imageProps = {
+  //     src: ,
+  //     alt: ,
+  //     style: ,
+  //     height: ,
+  //     width: ,
+  //     className: ,
+  //     data-testid: "tableLeftImgTest"
+  // };
+
+  var Image = function Image(_ref) {
+    var src = _ref.src,
+        styles = _ref.styles,
+        className = _ref.className;
+        _ref.height;
+        _ref.width;
+        var _ref$alt = _ref.alt,
+        alt = _ref$alt === void 0 ? "" : _ref$alt;
+    return /*#__PURE__*/React__default['default'].createElement("img", {
+      align: "center",
+      alt: alt,
+      src: src,
+      width: 600,
+      style: styles,
+      className: className
+    });
+  };
+  // src={src}
+  // alt={alt}
+  // style={styles.followSocialImg}
+  // height={24}
+  // width={24}
+  // className=''
+  // data-testid="tableLeftImgTest"
+  // /> */}
+  // import React, { Suspense } from 'react'
+  // import { useImage } from 'react-image'
+  // function MyImageComponent() {
+  //   const { src } = useImage({
+  //     srcList: 'https://www.example.com/foo.jpg',
+  //   })
+  //   return <img src={src} />
+  // }
+  // export default function MyComponent() {
+  //   return (
+  //     <Suspense>
+  //       <MyImageComponent />
+  //     </Suspense>
+  //   )
+  // }
+
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
+  var imgProps = function imgProps(props) {
+    var src = props.src,
+        alt = props.alt,
+        style = props.style,
+        height = props.height,
+        width = props.width,
+        className = props.className;
+    return {
+      src: src,
+      alt: alt,
+      style: style,
+      height: height,
+      width: width,
+      className: className
+    };
+  };
+
+  var getLinkProps = function getLinkProps(props) {
+    var href = props.href,
+        target = props.target,
+        style = props.style;
+    return {
+      href: href,
+      style: style,
+      target: target
+    };
+  }; // TODO stuff, related to styles is highly debated
+
+
+  var ImageLink = function ImageLink(props) {
+    var link = getLinkProps(props);
+    var image = imgProps(props);
+    return /*#__PURE__*/React__default['default'].createElement(Link, link, /*#__PURE__*/React__default['default'].createElement(Image, image));
+  }; // const ImageLink = ({href, styles, src, alt }) => (
+
+  function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+  var Logo = function Logo(_ref) {
+    _ref.href;
+        _ref.imageLink;
+        _ref.styles;
+    var imageProps = imgProps();
+    var linkProps = getLinkProps();
+
+    var imageLinkProps = _objectSpread(_objectSpread({}, imageProps), linkProps); //   <ImageLink href={href} style={styles.title} src={src} width={600} style={styles.img} className="mcnImage" />
+
+
+    return /*#__PURE__*/React__default['default'].createElement(ImageLink, imageLinkProps);
+  };
+
+  var SocialMedia = function SocialMedia(_ref) {
+    _ref.socialMediaLinks;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, " ");
+  };
+
+  var Copyright = function Copyright(_ref) {
+    var children = _ref.children;
+    return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, children);
+  };
+
+  var NBSP = (function () {
+    return "\xA0";
+  });
+
+  exports.Address = Address;
+  exports.Copyright = Copyright;
+  exports.HeadStyles = headStyles;
+  exports.Image = Image;
+  exports.ImageLink = ImageLink;
+  exports.Link = Link;
+  exports.Logo = Logo;
+  exports.NBSP = NBSP;
+  exports.SocialMedia = SocialMedia;
+  exports.Unsubscribe = Unsubscribe;
+  exports.getLinkProps = getLinkProps;
+  exports.imgProps = imgProps;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+}(build, build.exports));
 
 var styles$2 = {
   imageBlock: {
