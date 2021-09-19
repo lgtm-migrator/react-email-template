@@ -15,11 +15,14 @@ import Sponsor from './Sponsor/Sponsor.jsx';
 // TODO: find a better way to keep it at some place
 // import headStyles from './head-styles/index.js';
 
+import ContentOnly from './content-only/ContentOnly.js'
 
 
 export {
     LogoLayout, PreviewText, Sponsor,
 
     HOC,
-    Body
+    Body,
+
+    ContentOnly
 };
