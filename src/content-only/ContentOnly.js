@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Divider } from "react-email-components-typography";
 
-import HOC from '../HOC/HOC';
-import Body from '../Body/Body';
+import HOC from '../HOC/HOC.jsx';
+import Body from '../Body/Body.jsx';
 // import { HOC, Body } from "react-email-components-template";
 
 

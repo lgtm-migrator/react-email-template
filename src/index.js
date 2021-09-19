@@ -2,7 +2,7 @@
 
 
 
-import Body from './Body/Body.js';
+import Body from './Body/Body.jsx';
 
 import fonts from './fonts/Fonts';
 import HOC from './HOC/HOC.jsx';
