@@ -1,24 +1,23 @@
 import React from 'react';
 
 import { 
-  Copyrights, 
-  Address, 
-  Unsubscribe, 
-  
-  NewsletterSponsorshipLink 
-} from "react-emails-components-miscellaneous"
-
+  Copyright, Address, Unsubscribe, NewsletterSponsorshipLink 
+} from "atherdon-react-markdown-component-misc"
 
 import { 
-  Table, 
   TableLeft 
-} from "react-email-components-table";
+}  from "atherdon-react-markdown-component-content";
+
+import { 
+  Table
+} from "atherdon-react-markdown-component-body"
 
 import { styles } from './styles';
+
 import { config } from './config';
 
 const Footer = () => (
-  <>
+  <div>
     <Table
       className="mcnFollowBlock"
       style={styles.followBlock}
@@ -48,43 +47,36 @@ const Footer = () => (
                               <tbody>
                                 <tr>
                                   <td align="center" valign="top" style={styles.tdCenterTop2}>
-
                                     <TableLeft
                                       href={config.twitter}
                                       src={config.twitterLogo}
                                       alt="Twitter"
                                     />
-
                                     <TableLeft
                                       href={config.facebook}
                                       src={config.facebookLogo}
                                       alt="Facebook"
                                     />
-
                                     <TableLeft
                                       href={config.instagram}
                                       src={config.instagramLogo}
                                       alt="Instagram"
                                     />
-
                                     <TableLeft
                                       href={config.hn}
                                       src={config.hnLogo}
                                       alt="Website"
                                     />
-
                                     <TableLeft
                                       href={config.youtube}
                                       src={config.youtubeLogo}
                                       alt="YouTube"
                                     />
-
                                     <TableLeft
                                       href={config.email}
                                       src={config.emailLogo}
                                       alt="Email"
                                     />
-
                                   </td>
                                 </tr>
                               </tbody>
@@ -116,7 +108,7 @@ const Footer = () => (
               <tbody>
                 <tr>
                   <td valign="top" className="mcnTextContent" style={styles.textContent}>
-                    <Copyrights />
+                    <Copyright />
                     <br />
                     <Address />
                     <br />
@@ -130,7 +122,7 @@ const Footer = () => (
         </tr>
       </tbody>
     </Table>
-  </>
+  </div>
 );
 
 export default Footer;

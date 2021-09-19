@@ -28,42 +28,53 @@ const BodyPrototype = ({ config }) => {
       <MainTitle>
         {mainTitle}
       </MainTitle>
+
       <Paragraph>
         {paragraphFirst}
       </Paragraph>
+
       <Image
         href="#"
         src={memImageLink}
-        alt="GIF"
+        alt="GIF"        
       />
       {' '}
       I
       <Divider />
+
       <Paragraph>
         {paragraphSecond}
       </Paragraph>
+
       <Heading>
         <Strong>{heading}</Strong>
       </Heading>
+
       <Paragraph>
         {paragraphThird}
       </Paragraph>
+
       <Image
         href="#"
         src={memImageLink2}
       />
+
       <Divider />
       <Paragraph>
         {paragraphFourth}
       </Paragraph>
+
       <Heading>
         <Strong>{heading2}</Strong>
       </Heading>
+
       <Heading>
         <Strong>{heading3}</Strong>
       </Heading>
+
       <Image href="#" src={imageLink} />
       <Divider />
+
       <Paragraph>
         {paragraphFive}
       </Paragraph>

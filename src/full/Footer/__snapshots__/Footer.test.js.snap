@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`footer/index component renders correctly 1`] = `
-<div>
+Array [
   <table
     border={0}
     cellPadding={0}
@@ -848,7 +848,7 @@ exports[`footer/index component renders correctly 1`] = `
         </td>
       </tr>
     </tbody>
-  </table>
+  </table>,
   <table
     border={0}
     cellPadding={0}
@@ -987,6 +987,6 @@ exports[`footer/index component renders correctly 1`] = `
         </td>
       </tr>
     </tbody>
-  </table>
-</div>
+  </table>,
+]
 `;
