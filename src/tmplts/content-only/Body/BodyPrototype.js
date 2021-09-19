@@ -20,7 +20,9 @@ const BodyPrototype = ({ config }) => {
     paragraphThird,
     memImageLink2, paragraphFourth,
     
-    heading2, heading3, imageLink, paragraphFive,
+    heading2, heading3, 
+    
+    imageLink, paragraphFive,
   } = config;
 
   return (

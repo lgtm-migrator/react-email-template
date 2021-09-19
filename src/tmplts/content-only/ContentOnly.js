@@ -22,10 +22,14 @@ const ContentOnly = ({ header }) => (
           <Divider>
               
 
+
+
             <BodyPrototype
               config={config}
             />
-             
+
+
+
           </Divider>
         </td>
       </tr>
