@@ -2,7 +2,6 @@ import React from 'react';
 
 import { 
   MainTitle, 
-  // Image, 
   Heading, Strong, Paragraph, 
   // Separator, 
   Divider 
@@ -11,7 +10,7 @@ import {
 import { Image } from "react-emails-components-miscellaneous";
 
 
-const BodyPrototype = ({ config }) => {
+const BodyPrototype = (properties) => {
   const {
     mainTitle, paragraphFirst,
     memImageLink, paragraphSecond,
@@ -23,7 +22,9 @@ const BodyPrototype = ({ config }) => {
     heading2, heading3, 
     
     imageLink, paragraphFive,
-  } = config;
+
+    // pass images as an array that you can attack later
+  } = properties;
 
   return (
     <>
@@ -75,6 +76,7 @@ const BodyPrototype = ({ config }) => {
       </Heading>
 
       <Image href="#" src={imageLink} />
+
       <Divider />
 
       <Paragraph>

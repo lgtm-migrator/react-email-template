@@ -11,7 +11,9 @@ import BodyPrototype from './Body/BodyPrototype';
 
 
 import config from './config';
+
 import { styles } from './styles';
+
 
 const ContentOnly = ({ header }) => (
   <HOC styles={{ ...styles }}>
@@ -24,9 +26,7 @@ const ContentOnly = ({ header }) => (
 
 
 
-            <BodyPrototype
-              config={config}
-            />
+            <BodyPrototype config={config} />
 
 
 

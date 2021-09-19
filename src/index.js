@@ -1,10 +1,7 @@
 /* eslint import/extensions: 0 */
-
-
-
 import Body from './Body/Body.jsx';
 
-import fonts from './fonts/Fonts';
+import Fonts from './fonts/Fonts';
 import HOC from './HOC/HOC.jsx';
 
 import LogoLayout from './LogoLayout/Logo.jsx';
@@ -25,7 +22,7 @@ export {
     HOC,
     Body,
 
-    fonts, headStyles,
+    Fonts, headStyles,
 
     ContentOnly
 };
