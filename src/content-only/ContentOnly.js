@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Divider } from "atherdon-react-markdown-component-body"
+import { Divider } from "react-email-components-typography";
 
-// import HOC from './HOC';
-
-import { HOC } from "atherdon-react-markdown-component-wrapper";
+import HOC from '../HOC/HOC';
+import Body from '../Body/Body';
+// import { HOC, Body } from "react-email-components-template";
 
 
 import Footer from './Footer';

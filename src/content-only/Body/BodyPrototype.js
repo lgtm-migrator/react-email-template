@@ -1,9 +1,14 @@
 import React from 'react';
 
-// import { 
-//   MainTitle, Image, Heading, Strong, Paragraph, Separator, Divider 
-// } from "atherdon-react-markdown-component-typography"
+import { 
+  MainTitle, 
+  // Image, 
+  Heading, Strong, Paragraph, 
+  // Separator, 
+  Divider 
+} from "react-email-components-typography"
 
+import { Image } from "react-emails-components-miscellaneous";
 
 
 const BodyPrototype = ({ config }) => {
