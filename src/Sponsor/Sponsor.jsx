@@ -2,10 +2,14 @@ import React from 'react';
 
 import { Table } from 'react-email-components-table';
 
-import { Link } from 'react-emails-components-miscellaneous'; 
+import { 
+  Link, 
+  ImageLink 
+} from 'react-emails-components-miscellaneous'; 
 
 
 import { styles } from './styles';
+
 
 const Sponsor = ({
   leftHref, leftSrc, rightHref, children,
@@ -18,6 +22,7 @@ const Sponsor = ({
     <tbody>
       <tr>
         <td align="center" valign="top" className="mcnImageCardRightContentInner" style={styles.imageCardRightContentInner}>
+
           <Table
             align="left"
             className="mcnImageCardRightImageContentContainer"
@@ -28,9 +33,24 @@ const Sponsor = ({
               <tr>
                 <td className="mcnImageCardRightImageContent" align="center" valign="top" style={styles.imageCardRightContent}>
 
-                  <a href={leftHref} data-testid="sponsorHrefTest" title='' className='' target="_blank" style={styles.title}>
-                    <img alt="" src={leftSrc} width={150} data-testid="sponsorSrcTest" style={styles.image} className="mcnImage" />
+
+                  <ImageLink  />
+
+                  <a 
+                    href={leftHref} 
+                    data-testid="sponsorHrefTest" 
+                    title='' className='' 
+                    target="_blank" 
+                    style={styles.title}>
+                      <img 
+                        alt="" 
+                        src={leftSrc} 
+                        width={150} 
+                        data-testid="sponsorSrcTest" 
+                        style={styles.image} 
+                        className="mcnImage" />
                   </a>
+
 
                 </td>
               </tr>
@@ -45,20 +65,19 @@ const Sponsor = ({
             <tbody>
               <tr>
                 <td valign="top" className="mcnTextContent" style={styles.textContent}>
+
                   <h1 className="mc-toc-title" style={styles.docTitle}>
                     <br />
 
-
-
-                    <a href={rightHref} style={styles.link}>
+                    
+                    <Link href={rightHref} style={styles.link}>
                       <strong data-testid="sponsorChildrenTest">
                         {children}
                       </strong>
-                    </a>
-
-
+                    </Link>
 
                   </h1>
+
                 </td>
               </tr>
             </tbody>
