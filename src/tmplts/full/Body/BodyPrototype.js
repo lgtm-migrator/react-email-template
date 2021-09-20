@@ -1,23 +1,37 @@
 import React from 'react';
 
+
 import { 
-  MainTitle, Image, Heading, Strong, Paragraph, Separator, Link  
-} from "atherdon-react-markdown-component-typography"
+  MainTitle, 
+  
+  Heading, Strong, Paragraph, Separator, Link  
+} from "react-email-components-typography"
 
 import { 
   Sponsor, Divider, CtaList, GetPublished, JoinUs
 } from "atherdon-react-markdown-component-body"
 
+import { Image } from "react-emails-components-miscellaneous";
 
 import { links } from './config';
 
 const BodyPrototype = ({ config }) => {
   // @TODO update this version. i think it's really too much
   const {
-    sponsor, mainTitle, memImageLink, heading, paragraphThird, memImageLink2,
-    paragraphFourth, heading2, heading3, paragraphFive, paragraphFourth_1,
-    paragraphFirst, paragraphFirst_1, paragraphFive_1, paragraphFive_2, paragraphSix,
-    paragraphSix_1, paragraphSix_2, paragraphSix_3, heading4, paragraphSeven,
+    sponsor, mainTitle, memImageLink, 
+    
+    heading, paragraphThird, memImageLink2,
+    paragraphFourth, heading2, heading3, 
+    
+    paragraphFive, paragraphFourth_1,
+    paragraphFirst, paragraphFirst_1, 
+    
+    paragraphFive_1, paragraphFive_2, 
+    
+    paragraphSix,
+    paragraphSix_1, paragraphSix_2, 
+    
+    paragraphSix_3, heading4, paragraphSeven,
     paragraphSeven_1
   } = config;
 
@@ -30,7 +44,7 @@ const BodyPrototype = ({ config }) => {
       >
         {sponsor.text}
       </Sponsor>
-      
+
       <Divider />
       <MainTitle>
         {mainTitle}
