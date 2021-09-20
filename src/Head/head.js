@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Fonts from './fonts';
+import Fonts from '../Fonts/Fonts';
 
 import { headStyles } from 'atherdon-react-markdown-component-misc';
 
