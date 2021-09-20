@@ -1,6 +1,6 @@
 {
   "name": "react-email-components-template",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Example React Component for npm Publication using Rollup",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -122,6 +122,7 @@
     "@babel/runtime": "^7.14.6",
     "atherdon-react-markdown-component-body": "^0.1.0",
     "atherdon-react-markdown-component-typography": "^0.0.3",
+    "react-email-components-table": "^0.1.2",
     "react-email-components-typography": "^0.0.4",
     "react-emails-components-miscellaneous": "^0.2.0"
   },

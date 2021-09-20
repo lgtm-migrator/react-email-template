@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Sponsor } from "atherdon-react-markdown-component-body";
-
-
+import Sponsor from "../Sponsor/Sponsor";
 
 import { 
   MainTitle, Image, Heading, Strong, Paragraph, Separator, Divider 
 } from "react-email-components-typography"
 
-const Body = () => (
+import { Image } from "react-emails-components-miscellaneous";
+
+const BodyPrototype = () => (
   <>
     <Sponsor
       leftHref="https://bit.ly/30AWyC4"
@@ -89,4 +89,4 @@ const Body = () => (
   </>
 );
 
-export default Body;
+export default BodyPrototype;

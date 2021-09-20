@@ -14369,6 +14369,13 @@ react-element-to-jsx-string@^14.0.2, react-element-to-jsx-string@^14.3.2:
     "@base2/pretty-print-object" "1.0.0"
     is-plain-object "3.0.1"
 
+react-email-components-table@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-email-components-table/-/react-email-components-table-0.1.2.tgz#f8f5077fac445eee9dd0d9360e4341fea7d8a54e"
+  integrity sha512-sLga8l5+lGVlWRcuyhW9f7gYBdIBh0R3tP7d6wTYd3pAe1Lna/83bE9suBpIPbRXo7mcOjJLCYQhxx+ZXamqxA==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+
 react-email-components-typography@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/react-email-components-typography/-/react-email-components-typography-0.0.4.tgz#fb2c9f7ba6a44a858c2470c47856003f29fc9f49"
