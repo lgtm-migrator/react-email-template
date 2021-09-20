@@ -4,6 +4,8 @@ import React from 'react';
 import headStyles from './Styles/index.js';
 import Fonts from '../Fonts/Fonts';
 
+// check https://github.com/chromakode/react-html-email/pull/57/files
+
 const Head = ({ title }) => (
   <head>
     <meta charSet="UTF-8" />
