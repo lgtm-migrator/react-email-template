@@ -2,14 +2,13 @@
 import Body from './Body/Body.jsx';
 
 import Fonts from './fonts/Fonts';
-import HOC from './HOC/HOC.jsx';
+import Container from './Container/Container.jsx';
 
 import LogoLayout from './LogoLayout/Logo.jsx';
 import PreviewText from './PreviewText/PreviewText.jsx';
 import Sponsor from './Sponsor/Sponsor.jsx';
 
 import headStyles from './Styles/index.js';
-
 
 
 import ContentOnly from './content-only/ContentOnly.js'

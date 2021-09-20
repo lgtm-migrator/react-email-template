@@ -30,6 +30,7 @@ const BodyPrototype = ({ config }) => {
       >
         {sponsor.text}
       </Sponsor>
+      
       <Divider />
       <MainTitle>
         {mainTitle}
@@ -114,6 +115,7 @@ const BodyPrototype = ({ config }) => {
       <Separator />
       <GetPublished />
       <Divider />
+
       <Sponsor
         leftHref={links.sponsor}
         rightHref={sponsor.link}

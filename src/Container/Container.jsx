@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'react-email-components-table';
 
 
-const HOC = ({ children, styles }) => (
+const Container = ({ children, styles }) => (
   <>
     <div style={{ textAlign: 'center' }}>
 
@@ -30,4 +30,4 @@ const HOC = ({ children, styles }) => (
   </>
 );
 
-export default HOC;
+export default Container;

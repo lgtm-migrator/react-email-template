@@ -9,6 +9,7 @@ import { Logo } from "atherdon-react-markdown-component-content";
 
 import { HOC } from "atherdon-react-markdown-component-wrapper";
 
+
 import Footer from './Footer';
 
 import config from './config';
