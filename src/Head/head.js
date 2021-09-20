@@ -1,10 +1,8 @@
 import React from 'react';
 
+// TODO: styles and fonts can be passed into this component from the outside
+import headStyles from './Styles/index.js';
 import Fonts from '../Fonts/Fonts';
-
-import { headStyles } from 'atherdon-react-markdown-component-misc';
-
-
 
 const Head = ({ title }) => (
   <head>

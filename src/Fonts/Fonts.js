@@ -1,5 +1,6 @@
 import React from 'react';
 
+// TODO we can here a https string, but not sure if it will satisfy me at all
 const Fonts = ({children}) => (
   <>
     {children}
