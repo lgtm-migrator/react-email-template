@@ -18,3 +18,37 @@ const Head = ({ title }) => (
 );
 
 export default Head;
+
+
+// expand it later
+<!--[if !mso]>
+      <!-->
+      <style type="text/css">
+        @media only screen and (max-width:480px) {
+        			  		@-ms-viewport {width: 320px;}
+        			  		@viewport {	width: 320px; }
+        				}
+      </style>
+    <!--<![endif]-->
+    <!--[if mso]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if lte mso 11]>
+      <style type="text/css">
+        .outlook-group-fix{width:100% !important;}
+      </style>
+    <![endif]-->
+
+    <!--[if !mso]>
+      <!-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"
+      type="text/css">
+      <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+      </style>
+    <!--<![endif]-->
