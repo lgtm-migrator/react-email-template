@@ -2,14 +2,14 @@ import React from 'react';
 
 import { Divider } from "react-email-components-typography";
 
-import HOC from '../HOC/HOC.jsx';
+import Container from '../Container/Container.jsx';
 
 import Body from './Body/Body';
 
 import { styles } from './styles';
 
 const ContentOnly = ({ header }) => (
-  <HOC styles={{ ...styles }}>
+  <Container styles={{ ...styles }}>
     <tbody>
       <tr>
         <td valign="top" id="templateBody" style={styles.templateBody}>
@@ -22,7 +22,7 @@ const ContentOnly = ({ header }) => (
       </tr>
     </tbody>
 
-  </HOC>
+  </Container>
 );
 
 export default ContentOnly;
