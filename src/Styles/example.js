@@ -1,5 +1,5 @@
 
-const Container = ({ children, width }) => {
+const StyleTag = ({ children, width }) => {
   return (
     <Fragment>
       <style dangerouslySetInnerHTML={{__html: `
@@ -10,3 +10,6 @@ const Container = ({ children, width }) => {
           }
         }
       `}} />
+      </Fragment>
+  );
+}
