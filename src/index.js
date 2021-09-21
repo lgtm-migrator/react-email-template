@@ -19,7 +19,7 @@ export {
 
     LogoLayout, PreviewText, Sponsor,
 
-    HOC,
+    Container,
     Body,
 
     Fonts, headStyles,
