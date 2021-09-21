@@ -1,5 +1,5 @@
 /* eslint import/extensions: 0 */
-import Body from './Body/Body.jsx';
+// import Body from './Body/Body.jsx'; // it can be bodyPrototype, but later
 
 import Fonts from './fonts/Fonts';
 import Container from './Container or Block/Container.jsx';
@@ -19,7 +19,7 @@ export {
 
     LogoLayout, PreviewText, Sponsor,
 
-    Container,
+    
     Body,
 
     Fonts, headStyles,
