@@ -1,3 +1,3 @@
-import Logo from './Logo';
+import LogoLayout from './LogoLayout';
 
-export default Logo;
+export default LogoLayout;

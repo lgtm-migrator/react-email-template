@@ -6,38 +6,29 @@ import { styles } from './styles';
 import config from './config';
 
 
-() => {
+const LogoImage = () => {
 
     let props = {
+        //link
         href:config.link,
         title:'',
         className:'',
         style:styles.title,
 
-        align="center"
-        alt=""
-        src={config.imgLink}
-        width={600}
-        style={styles.img}
-        className="mcnImage"
+        //image    
+        align:"center",
+        alt:"",
+        src:config.imgLink,
+        width:600,
+        style:styles.img,
+        className:"mcnImage"
     }
+
     return (
         <td className="mcnImageContent" valign="top" style={styles.imageContent}>
-
-            <Logo {...props} />
-
-            <a href={config.link} title='' className='' target="_blank" style={styles.title}>
-            <img
-                align="center"
-                alt=""
-                src={config.imgLink}
-                width={600}
-                style={styles.img}
-                className="mcnImage"
-            />
-            </a>
-
-        
+            <Logo {...props} />       
       </td>
     );
 }
+
+export default LogoImage;

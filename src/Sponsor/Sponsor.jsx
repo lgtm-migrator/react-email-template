@@ -21,7 +21,8 @@ const Sponsor = ({
   >
     <tbody>
       <tr>
-        <td align="center" valign="top" className="mcnImageCardRightContentInner" style={styles.imageCardRightContentInner}>
+        <td align="center" valign="top" className="mcnImageCardRightContentInner" 
+          style={styles.imageCardRightContentInner}>
 
           <Table
             align="left"
@@ -31,7 +32,8 @@ const Sponsor = ({
           >
             <tbody>
               <tr>
-                <td className="mcnImageCardRightImageContent" align="center" valign="top" style={styles.imageCardRightContent}>
+                <td className="mcnImageCardRightImageContent" align="center" valign="top" 
+                  style={styles.imageCardRightContent}>
 
 
                   <ImageLink  />
@@ -67,15 +69,12 @@ const Sponsor = ({
                 <td valign="top" className="mcnTextContent" style={styles.textContent}>
 
                   <h1 className="mc-toc-title" style={styles.docTitle}>
-                    <br />
-
-                    
+                    <br />                    
                     <Link href={rightHref} style={styles.link}>
                       <strong data-testid="sponsorChildrenTest">
                         {children}
                       </strong>
                     </Link>
-
                   </h1>
 
                 </td>
