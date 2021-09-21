@@ -20,7 +20,7 @@ export {
     LogoLayout, PreviewText, Sponsor,
 
     
-    Body,
+    // Body,
 
     Fonts, headStyles,
     Container,
