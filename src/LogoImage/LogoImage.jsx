@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Logo } from 'react-emails-components-miscellaneous'; 
 
-import { styles } from './styles';
+import styles from './styles';
 import config from './config';
 
 

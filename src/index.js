@@ -8,7 +8,7 @@ import LogoLayout from './LogoLayout/LogoLayout.jsx';
 import PreviewText from './PreviewText/PreviewText.jsx';
 import Sponsor from './Sponsor/Sponsor.jsx';
 
-import headStyles from './Styles/index.js';
+import headStyles from './Styles/styles.js';
 
 
 import ContentOnly from './tmplts/_templates/content-only/ContentOnly'

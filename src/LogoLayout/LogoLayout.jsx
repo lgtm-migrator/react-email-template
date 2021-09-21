@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Table } from 'react-email-components-table';
 
-import LogoImage from './../LogoImage/LogoImage';
+import LogoImage from '../LogoImage/LogoImage.jsx';
 
 import { styles } from './styles';
 import config from './config';
