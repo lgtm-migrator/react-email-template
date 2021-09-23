@@ -4,7 +4,9 @@ import { Divider } from "react-email-components-typography";
 
 import Block from '../../../../Block/Block.jsx';
 
+
 import Body from '../Content/Body';
+
 
 import { styles } from './styles';
 

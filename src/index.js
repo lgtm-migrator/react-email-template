@@ -2,7 +2,7 @@
 // import Body from './Body/Body.jsx'; // it can be bodyPrototype, but later
 
 import Fonts from './Fonts/Fonts.jsx';
-import Container from './Container or Block/Container.jsx';
+import Block from './Block/Block.jsx';
 
 import LogoLayout from './LogoLayout/LogoLayout.jsx';
 import PreviewText from './PreviewText/PreviewText.jsx';
@@ -21,11 +21,11 @@ export {
     LogoLayout, PreviewText, Sponsor,
 
     
-    
 
     Fonts, headStyles,
-    Container,
+    Block,
+    
 
-
-    ContentOnly
+    ContentOnly,
+    Content
 };
