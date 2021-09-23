@@ -15,7 +15,7 @@ const Container = () => (
   <Block styles={{ ...styles }}>
     <tbody>
       <tr>
-        <td valign="top" id="templateBody" style={styles.templateBody}>
+        <td valign="top" id="templateBody" {/*style={styles.templateBody}*/}>
           <Divider>
             
             <Body />
