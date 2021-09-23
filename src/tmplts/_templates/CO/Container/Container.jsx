@@ -5,7 +5,7 @@ import { Divider } from "react-email-components-typography";
 import Block from '../../../../Block/Block.jsx';
 
 
-import Body from '../Content/Body';
+import Body from '../Content/Body.jsx';
 
 
 import { styles } from './styles';
@@ -27,4 +27,4 @@ const Container = () => (
   </Block>
 );
 
-export default ContentOnly;
+export default Container;

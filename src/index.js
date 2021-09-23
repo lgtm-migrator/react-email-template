@@ -26,6 +26,6 @@ export {
     Block,
     
 
-    ContentOnly,
+    Container,
     Content
 };
