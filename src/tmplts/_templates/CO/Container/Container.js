@@ -2,16 +2,14 @@ import React from 'react';
 
 import { Divider } from "react-email-components-typography";
 
-import Container from '../../../../Container or Block/Container.jsx';
+import Block from '../../../../Block/Block.jsx';
 
-// /Container/Container.jsx';
-
-import Body from '../ContentBody/Body';
+import Body from '../Content/Body';
 
 import { styles } from './styles';
 
-const ContentOnly = ({ header }) => (
-  <Container styles={{ ...styles }}>
+const Container = () => (
+  <Block styles={{ ...styles }}>
     <tbody>
       <tr>
         <td valign="top" id="templateBody" style={styles.templateBody}>
@@ -24,7 +22,7 @@ const ContentOnly = ({ header }) => (
       </tr>
     </tbody>
 
-  </Container>
+  </Block>
 );
 
 export default ContentOnly;
