@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Divider } from "react-email-components-typography";
 
-import Container from '../../../Container or Block/Container.jsx';
+import Container from '../../../../Container or Block/Container.jsx';
 
 // /Container/Container.jsx';
 
-import Body from './Body/Body';
+import Body from '../ContentBody/Body';
 
 import { styles } from './styles';
 
