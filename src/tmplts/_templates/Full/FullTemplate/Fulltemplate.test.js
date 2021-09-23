@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 import ReactDOM from 'react-dom';
-import FullTemplate from './index';
+import FullTemplate from '../index';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 

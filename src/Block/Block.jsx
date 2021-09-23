@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'react-email-components-table';
 
 
-const Container = ({ children, styles }) => (
+const Block = ({ children, styles }) => (
   <>
     <div style={{ textAlign: 'center' }}>
 
@@ -30,4 +30,4 @@ const Container = ({ children, styles }) => (
   </>
 );
 
-export default Container;
+export default Block;

@@ -1,16 +1,16 @@
 import React from 'react';
 
-import BodyPrototype from './Body/BodyPrototype';
+import BodyPrototype from '../Body/BodyPrototype';
 
 import { Divider } from "atherdon-react-markdown-component-body";
 import { Logo } from "atherdon-react-markdown-component-content";
 
-import Container from '../../Container/Container';
+import Block from '../../Block/Block';
 
 // import { HOC } from "atherdon-react-markdown-component-wrapper";
 
 
-import Footer from './Footer';
+import Footer from '../Footer';
 
 import config from './config';
 
