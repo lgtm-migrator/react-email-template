@@ -1,9 +1,13 @@
 // COOL EXAMPLE
 
-import Document, {
-    Html, Head, Main, NextScript,
-  } from 'next/document';
-  
+// import Document, {
+//     Html, Head, Main, NextScript,
+//   } from 'next/document';
+ 
+// import Head from ''
+// import Footer from ''
+// import Content from ''
+
   // @TODO: here we can use our custom Head component
   // import Head from 'components/head';
   
@@ -19,7 +23,11 @@ import Document, {
           <Head />
           <body>
             <Main />
-            <NextScript />
+            <Template>
+              <Header />
+              <Content />
+              <Footer />
+            </Template>
           </body>
         </Html>
       );

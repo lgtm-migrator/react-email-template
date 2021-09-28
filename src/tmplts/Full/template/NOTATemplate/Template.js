@@ -1,14 +1,13 @@
 import React from 'react';
 
-import BodyPrototype from '../../../Body/BodyPrototype';
-
 import { Divider } from "atherdon-react-markdown-component-body";
 import { Logo } from "atherdon-react-markdown-component-content";
 
-import Block from '../../Block/Block';
+// import BodyPrototype from '../../../Body/BodyPrototype';
 
-// import { HOC } from "atherdon-react-markdown-component-wrapper";
+import Container from '../../../CO/Container/Container';
 
+// import Header from '../';
 
 import Footer from '../Footer';
 
@@ -16,16 +15,18 @@ import config from './config';
 
 import { styles } from './styles';
 
-const FullTemplate = ({ header }) => (
+const NOTATemplate = ({ header }) => (
   <Container styles={{ ...styles }}>
     <tbody>
       <tr>
-        <td valign="top" id="templatePreheader" style={styles.templatePreheader}>
+        <td valign="top" id="templatePreheader" 
+        style={styles.templatePreheader}>
           <Logo />
         </td>
       </tr>
       <tr>
-        <td valign="top" id="templateHeader" style={styles.templateHeader} data-testid="bodyPropsTest">
+        <td valign="top" id="templateHeader" style={styles.templateHeader} 
+        data-testid="bodyPropsTest">
           {header}
         </td>
       </tr>
@@ -46,4 +47,4 @@ const FullTemplate = ({ header }) => (
   </Container>
 );
 
-export default FullTemplate;
+export default NOTATemplate;
