@@ -1,4 +1,9 @@
-p{
+import React from 'react';
+
+const HeadStyles = () => (
+  <>
+  <style>
+  p{
     margin:10px 0;
     padding:0;
 }
@@ -374,3 +379,10 @@ h4{
     }
 
 }
+
+</style>
+
+  </>
+);
+
+export default HeadStyles;
