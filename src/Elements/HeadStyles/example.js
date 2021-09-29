@@ -1,5 +1,6 @@
+import React, { Fragment } from 'react';
 
-const StyleTag = ({ children, width }) => {
+const StyleTag = ({ width }) => {
   return (
     <Fragment>
       <style dangerouslySetInnerHTML={{__html: `
@@ -13,3 +14,5 @@ const StyleTag = ({ children, width }) => {
       </Fragment>
   );
 }
+
+export default StyleTag
