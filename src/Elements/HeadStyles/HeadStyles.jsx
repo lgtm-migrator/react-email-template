@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const HeadStyles = () => (
-  <>
-  <style>
-  p{
+  <Fragment>
+  
+    <style dangerouslySetInnerHTML={{__html: `
+p{
     margin:10px 0;
     padding:0;
 }
@@ -379,10 +380,10 @@ h4{
     }
 
 }
+    `}}></style>
 
-</style>
 
-  </>
+  </Fragment>
 );
 
 export default HeadStyles;
