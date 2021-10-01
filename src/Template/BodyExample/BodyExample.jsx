@@ -17,6 +17,10 @@ const BodyPrototype = () => (
     >
       Ship the data importer you always dreamed of
     </Sponsor>
+
+
+
+
     <MainTitle>
       Can We Make Data Tidy?
     </MainTitle>
@@ -79,6 +83,9 @@ const BodyPrototype = () => (
       observational unit per table. Now THIS is tidy data.
     </Paragraph>
     <Divider />
+
+
+
     <Sponsor
       leftHref="https://bit.ly/30AWyC4"
       rightHref="https://bit.ly/30AWyC4"
