@@ -16,4 +16,5 @@ dir (string, optional) - Either 'ltr' or 'rtl'. 'ltr' is the default
 
 - https://speakerdeck.com/vjeux/react-css-in-js
 
-
+- https://stackoverflow.com/questions/37337289/react-js-set-innerhtml-vs-dangerouslysetinnerhtml
+- https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml
