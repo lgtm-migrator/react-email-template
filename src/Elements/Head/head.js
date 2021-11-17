@@ -6,7 +6,7 @@ import Fonts from '../Fonts/Fonts';
 
 // check https://github.com/chromakode/react-html-email/pull/57/files
 
-const Head = ({ title }) => (
+const Head = ({ title, headStyles }) => (
   <head>
     <meta charSet="UTF-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
