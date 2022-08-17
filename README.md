@@ -1,4 +1,4 @@
-# yarn add react-email-components-template
+### `yarn add react-email-components-template`
 
 We have issues with renderting templates right now.
 There different things that should be concidered as done in order to make it work great for all 
